@@ -23,7 +23,7 @@
     <h1>Productos</h1>
 
     <?php
-    include '../../config/conexionDB.php';
+    include_once(__DIR__ . '/../../config/conexionDB.php');
     $pdo = getPDO();
 
     try {
@@ -38,7 +38,7 @@
                                     `b_productos`.`hora_registro`,
                                     `b_productos`.`ip`,
                                     `b_productos`.`activo`
-                                FROM `dbprogramacionweb`.`b_productos`;
+                                FROM `db_sistemas`.`b_productos`;
                             ');
 
         // Obtener nombres de columnas
@@ -55,7 +55,7 @@
                                     `b_productos`.`hora_registro`,
                                     `b_productos`.`ip`,
                                     `b_productos`.`activo`
-                                FROM `dbprogramacionweb`.`b_productos`;
+                                FROM `db_sistemas`.`b_productos`;
                             ');
 
         // Generar la tabla HTML con clases y encabezados automáticos
@@ -98,12 +98,12 @@
         <input type="text" name="imagen" id="imagen">
         <label for="categoria">Categoría:</label>
         <input type="text" name="categoria" id="categoria">
-    <!--<label for="fecha_registro">Fecha de registro:</label>
+        <label for="fecha_registro">Fecha de registro:</label>
         <input type="text" name="fecha_registro" id="fecha_registro">
         <label for="hora_registro">Hora de registro:</label>
         <input type="text" name="hora_registro" id="hora_registro">
         <label for="ip">IP:</label>
-        <input type="text" name="ip" id="ip"> -->
+        <input type="text" name="ip" id="ip">
         <label for="activo">Activo:</label>
         <input type="text" name="activo" id="activo">
         <input type="submit" value="Agregar">
