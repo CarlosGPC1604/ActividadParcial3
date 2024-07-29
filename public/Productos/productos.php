@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/tabla.css">
+    <link rel="stylesheet" href="/css/formulario.css">
     <title>Inicio</title>
 </head>
 
@@ -89,23 +90,23 @@
 
     <form action="">
         <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre">
+        <input type="text" name="nombre" id="nombre" autocomplete="off">
         <label for="descripcion">Descripción:</label>
-        <input type="text" name="descripcion" id="descripcion">
+        <input type="text" name="descripcion" id="descripcion" autocomplete="off">
         <label for="precio">Precio:</label>
-        <input type="text" name="precio" id="precio">
+        <input type="text" name="precio" id="precio" autocomplete="off">
         <label for="imagen">Imagen:</label>
-        <input type="text" name="imagen" id="imagen">
+        <input type="file" name="imagen" id="imagen" autocomplete="off">
         <label for="categoria">Categoría:</label>
-        <input type="text" name="categoria" id="categoria">
+        <input type="text" name="categoria" id="categoria" autocomplete="off">
         <label for="fecha_registro">Fecha de registro:</label>
-        <input type="text" name="fecha_registro" id="fecha_registro">
+        <input type="text" name="fecha_registro" id="fecha_registro" autocomplete="off">
         <label for="hora_registro">Hora de registro:</label>
-        <input type="text" name="hora_registro" id="hora_registro">
+        <input type="text" name="hora_registro" id="hora_registro" autocomplete="off">
         <label for="ip">IP:</label>
-        <input type="text" name="ip" id="ip">
+        <input type="text" name="ip" id="ip" autocomplete="off">
         <label for="activo">Activo:</label>
-        <input type="text" name="activo" id="activo">
+        <input type="text" name="activo" id="activo" autocomplete="off">
         <input type="submit" value="Agregar">
     </form>
 

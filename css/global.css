@@ -37,18 +37,9 @@ nav > ul > li {
 }
 
 nav > ul > li:hover {
-    background-color: #de2424;
+    background-color: #c34f70;
 }
 
 nav > ul > li:active {
-    background-color: #f85b5b;
-}
-
-form {
-    width: 70%;
-}
-
-label, input, textarea, button {
-    display: block;
-    width: 100%;
+    background-color: #cb345f;
 }
